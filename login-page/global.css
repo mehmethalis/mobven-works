@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins";
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.right-cover {
+  background-color: #f3f5f9;
+  background-image: url("./assets/cover.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+}
+
+.login {
+  width: 45%;
+}
+
+.login h5 {
+  text-align: start;
+  font-weight: 300;
+  opacity: 0.4;
+}
+.login h1 {
+  text-align: start;
+}
+
+.login input {
+  display: block;
+  border-radius: 5px;
+  border: solid 1px #eeeeee;
+  width: 92%;
+  padding: 10px 15px;
+}
+.login label {
+  margin: 15px 0 3px 0;
+  display: block;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.forgot {
+  margin: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #7e56da;
+  text-decoration: none;
+  float: right;
+}
+
+.login button {
+  padding: 10px 15px;
+  margin-top: 15px;
+  background-color: #7e56da;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login .google {
+  background-color: #ffff;
+  border: 1px solid #eeeeee;
+  font-weight: 500;
+  color: #333333;
+}
+
+.login .register {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  font-size: 12px;
+  color: #333333;
+  text-decoration: none;
+}
+.login .register a {
+  text-decoration: none;
+  margin-left: 5px;
+}
