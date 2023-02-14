@@ -14,31 +14,39 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="heading">
-        <h1>Try it now!</h1>
-        <h5>Free trial, no obligation</h5>
-      </div>
-      <div class="input-group">
-        <label for="email"> Work Email Address </label>
-        <input type="text" name="email" placeholder="Enter your work email address" />
-      </div>
-      <div class="input-group">
-        <div class="checkbox">
-          <input type="checkbox" name="terms" value="terms" />
-          <label for="terms"> I Agree to the <u>Terms and Conditions.</u></label>
+    <section class="popup">
+      <header class="popup-heading">
+        <p class="popup-heading__title -text-red">Try it now!</p>
+        <p class="popup-heading__sub-title">Free trial, no obligation</p>
+      </header>
+      <div class="form-group__list">
+        <div class="form-group column mb-32">
+          <label class="input-group__label" for="email"> Work Email Address </label>
+          <input
+            type="text"
+            name="email"
+            class="email-input fade"
+            placeholder="Enter your work email address"
+          />
         </div>
-        <div class="checkbox">
-          <input type="checkbox" name="newsletter" value="newsletter" />
-          <label for="newsletter"> Subscribe to our newsletter.</label>
+        <div class="form-group">
+          <input type="checkbox" name="terms" value="terms" class="checkbox fade" />
+          <label class="input-group__label" for="terms">
+            I Agree to the <u>Terms and Conditions.</u></label
+          >
         </div>
-        <div class="checkbox">
-          <input type="checkbox" name="email" value="email" />
-          <label for="email"> Subscribe to our trial onboarding emails.</label>
+        <div class="form-group">
+          <input type="checkbox" name="newsletter" value="newsletter" class="checkbox fade" />
+          <label class="input-group__label" for="newsletter"> Subscribe to our newsletter.</label>
+        </div>
+        <div class="form-group">
+          <input type="checkbox" name="email" value="email" class="checkbox fade" />
+          <label class="input-group__label" for="email">
+            Subscribe to our trial onboarding emails.</label
+          >
         </div>
       </div>
-      <button class="btn">Download Now</button>
-    </div>
-    <div class="rectangle"></div>
+      <button class="btn fade">Download Now</button>
+    </section>
   </body>
 </html>
