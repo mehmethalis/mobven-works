@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-family: "Merriweather", sans-serif;
+  font-size: 40px;
+  margin-bottom: 7px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+label {
+  font-size: 16px;
+}
+
+body {
+  min-height: 100vh;
+  background: #d8ddf5;
+  color: #141a3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.input-group > input {
+  margin-top: 4px;
+  padding: 16px 24px;
+  border-radius: 4px;
+  border: 2px solid #b1b7d9;
+  background: transparent;
+  transition-duration: 0.3s;
+}
+
+.input-group > input:focus {
+  outline: none;
+  border: 2px solid #141a3a;
+  transition-duration: 0.3s;
+}
+
+.input-group > input::placeholder {
+  font-size: 16px;
+  color: #141a3a;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px;
+  background: linear-gradient(312.4deg, #f7f8ff 1.64%, #e7eafe 104.3%);
+  border-radius: 24px;
+}
+
+.heading {
+  margin-bottom: 32px;
+}
+
+.checkbox {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #b1b7d9;
+  border-radius: 4px;
+  background-color: transparent;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+  border-color: #b1b7d9;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #141a3a;
+  border-color: #141a3a;
+  transition-duration: 0.3s;
+}
+
+.checkbox:last-child {
+  margin-bottom: 0;
+}
+.checkbox label {
+  margin-left: 15px;
+}
+
+.btn {
+  padding: 16px 24px;
+  background-color: #fdc3d4;
+  border: 1px solid #cb6565;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  transition-duration: 0.3s;
+}
+
+/** rectangle **/
+.rectangle {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  background-color: #c8cff4;
+  border-radius: 12px;
+  bottom: 140px;
+  margin-left: 100px;
+  z-index: -1;
+}
