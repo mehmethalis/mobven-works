@@ -1,0 +1,11 @@
+:root {
+  --bg-light: #f7f7fa;
+  --white: #fff;
+  --white-100: #e3e5f1;
+  --blue: #60679f;
+  --blue-600: #10153e;
+
+  /**Fonts**/
+  --font-merri: "Merriweather", serif;
+  --font-poppins: "Poppins", sans-serif;
+}
