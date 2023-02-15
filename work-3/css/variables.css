@@ -1,0 +1,11 @@
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --white-100: #fefaf3;
+  --white-200: #f8f4e7;
+  --white-300: #f2e7da;
+  --white-500: #fff;
+  --blue-600: #3f3e68;
+  --gray-100: #a7a6c3;
+  --gray-200: rgba(63, 62, 104, 0.8);
+  --linear-100: linear-gradient(124.22deg, #e3e4da 10.29%, #e4deda 100%);
+}

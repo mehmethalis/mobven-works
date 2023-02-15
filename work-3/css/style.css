@@ -1,37 +1,3 @@
-:root {
-  --font-poppins: "Poppins", sans-serif;
-  --white-100: #fefaf3;
-  --white-200: #f8f4e7;
-  --white-300: #f2e7da;
-  --white-500: #fff;
-  --blue-600: #3f3e68;
-  --gray-100: #a7a6c3;
-  --gray-200: rgba(63, 62, 104, 0.8);
-  --linear-100: linear-gradient(124.22deg, #e3e4da 10.29%, #e4deda 100%);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-body {
-  min-height: 100vh;
-  background: var(--linear-100);
-  color: var(--blue-600);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-poppins);
-  overflow: hidden;
-}
-
 .popup {
   display: flex;
   position: relative;
@@ -53,7 +19,7 @@ body {
   width: 202px;
   height: 281px;
   left: -160px;
-  top: -160px;
+  top: -120px;
 }
 
 .popup::after {
@@ -64,7 +30,7 @@ body {
   width: 336px;
   height: 469px;
   left: 300px;
-  top: 400px;
+  bottom: -100px;
 }
 
 .popup-body {
@@ -73,7 +39,7 @@ body {
   gap: 16px;
 }
 
-.popup-title {
+.popup-body__title {
   font-size: 32px;
   font-weight: 700;
   color: var(--blue-600);
