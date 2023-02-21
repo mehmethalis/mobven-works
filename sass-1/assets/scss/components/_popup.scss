@@ -1,0 +1,32 @@
+.popup {
+  position: relative;
+  width: 660px;
+  background-color: $white;
+  @include rounded(24px);
+  @include shadow-light;
+  @include flex(column, flex-start, flex-start);
+  padding: $xxl;
+  gap: $xl;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 420px;
+    background-color: $purple-200;
+    height: 610px;
+    top: -75px;
+    left: 110px;
+    @include z-index("basement");
+    @include rounded(31px);
+  }
+
+  &-header {
+    display: flex;
+    gap: $sm;
+  }
+  &-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $md;
+  }
+}

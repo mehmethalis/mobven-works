@@ -1,0 +1,7 @@
+@mixin shadow-light() {
+  box-shadow: 0px 14px 52px -20px #8675b4;
+}
+
+@mixin shadow-dark() {
+  box-shadow: 0px 14px 16px rgba(41, 11, 128, 0.1);
+}

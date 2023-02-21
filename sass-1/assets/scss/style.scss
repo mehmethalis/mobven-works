@@ -1,0 +1,14 @@
+@import "./abstracts";
+@import "./base";
+@import "./helpers";
+@import "./components";
+
+body {
+  line-height: 1;
+  background-color: $purple-100;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-poppins;
+}

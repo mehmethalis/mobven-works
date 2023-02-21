@@ -1,0 +1,38 @@
+.card {
+  height: 108px;
+  width: 112px;
+  gap: $xxs;
+  padding: $lg;
+  font-size: $fs-16;
+  font-weight: $fw-semibold;
+  background: $white;
+  @include flex(column, center, center);
+  @include rounded(8px);
+
+  &:hover {
+    @include shadow-dark;
+    border: 1px solid $white-100;
+  }
+
+  &.-pink {
+    background-color: $pink-100;
+  }
+  &.-blue {
+    background-color: $blue-100;
+  }
+  &.-green-100 {
+    background-color: $green-100;
+  }
+  &.-green-200 {
+    background-color: $green-200;
+  }
+  &.-yellow {
+    background-color: $yellow-100;
+  }
+  &.-red-100 {
+    background-color: $red-100;
+  }
+  &.-red-200 {
+    background-color: $red-200;
+  }
+}

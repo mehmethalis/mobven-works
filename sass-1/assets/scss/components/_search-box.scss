@@ -1,0 +1,30 @@
+.search-box {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: $md;
+    top: $md;
+    background: transparent url("../img/icons/find.svg") no-repeat;
+    background-size: cover;
+    @include z-index("middle-floor");
+  }
+}
+
+.input {
+  border: 1px solid $white-100;
+  @include rounded(4px);
+  padding: $md $md $md 48px;
+  color: $purple-500;
+  font-family: $font-poppins;
+  font-weight: $fw-semibold;
+  font-size: $fs-16;
+  position: relative;
+  outline: none;
+  &::placeholder {
+    color: $purple-400;
+  }
+}

@@ -1,0 +1,17 @@
+.btn {
+  font-weight: $fw-semibold;
+  font-size: $fs-16;
+  padding: $md;
+  background-color: $purple-500;
+  color: $white;
+  border: none;
+  @include rounded(4px);
+  @include flex(row, center, flex-start);
+  gap: $xs;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
