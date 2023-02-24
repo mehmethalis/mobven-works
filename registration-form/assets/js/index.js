@@ -60,7 +60,7 @@ const validatePhone = (phone) => {
 
 const emailEl = document.getElementById("email");
 emailEl.addEventListener("blur", (event) => {
-  isValid = validateEmail(event.target.value);
+  const isValid = validateEmail(event.target.value);
   const alert = document.getElementById("email-alert");
   if (!isValid && !alert) {
     const alert = document.createElement("p");
@@ -80,7 +80,7 @@ phoneEl.addEventListener("keyup", (event) => {
 });
 
 phoneEl.addEventListener("blur", (event) => {
-  isValid = validatePhone(event.target.value);
+  const isValid = validatePhone(event.target.value);
   const alert = document.getElementById("phone-alert");
   if (!isValid && !alert) {
     const alert = document.createElement("p");
