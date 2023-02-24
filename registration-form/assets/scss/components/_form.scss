@@ -1,0 +1,62 @@
+.form {
+  width: 100%;
+  @include flex(column, center, center);
+  gap: 15px;
+
+  &-group {
+    width: 100%;
+    @include flex(column, center, center);
+    gap: 15px;
+
+    &.-horizontal {
+      @include flex(row, center, center);
+      gap: 15px;
+    }
+  }
+}
+
+.input {
+  outline: none;
+  font-size: 18px;
+  min-width: 100%;
+  width: 100%;
+  @include rounded(8px);
+
+  &-label {
+    font-size: $fs-16;
+  }
+
+  &.-text {
+    padding: 14px 24px;
+    border: 1px solid $border-color;
+    @include fade;
+
+    &:focus {
+      background-color: $bg-purple-200;
+    }
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+
+  &.-selectbox {
+    padding: 14px 24px;
+    border: 1px solid $border-color;
+    background: none;
+    @include fade;
+
+    &::placeholder {
+      font-size: 16px;
+    }
+
+    &:disabled {
+      background: $gray;
+    }
+  }
+
+  &-group {
+    width: 100%;
+    @include flex(column, flex-start, flex-start);
+    gap: 8px;
+  }
+}

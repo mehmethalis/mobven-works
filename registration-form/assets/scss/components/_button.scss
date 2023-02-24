@@ -1,0 +1,21 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $text-red;
+  color: $white;
+  font-weight: $fw-semibold;
+  font-size: $fs-16;
+  padding: 20px;
+  @include rounded(8px);
+  outline: none;
+  border: none;
+  width: 100%;
+  margin-top: 15px;
+  cursor: pointer;
+  @include fade;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

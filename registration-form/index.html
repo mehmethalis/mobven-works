@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <section class="popup">
+      <header class="popup-header">
+        <h1 class="title">Registration Form</h1>
+      </header>
+      <div class="popup-body">
+        <div class="form">
+          <div class="form-group">
+            <div class="input-group">
+              <label class="input-label" for="firstName">First Name</label>
+              <input
+                class="input -text"
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="First name"
+              />
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="lastName">Last Name</label>
+              <input
+                class="input -text"
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Last name"
+              />
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="email">Email</label>
+              <input class="input -text" type="email" id="email" name="email" placeholder="Email" />
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="phone">Phone <small>(534 ...)</small></label>
+              <input class="input -text" type="tel" id="phone" name="phone" placeholder="Phone" />
+            </div>
+          </div>
+          <div class="form-group -horizontal">
+            <div class="input-group">
+              <label class="input-label" for="city">City</label>
+              <select class="input -selectbox" name="city" id="city">
+                <option value="">City</option>
+              </select>
+            </div>
+            <div class="input-group">
+              <label class="input-label" for="district">District</label>
+              <select class="input -selectbox" name="district" id="district">
+                <option value="">District</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn">Create</button>
+        </div>
+      </div>
+    </section>
+    <script src="/assets/js/index.js"></script>
+  </body>
+</html>
